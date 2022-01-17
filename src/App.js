@@ -15,7 +15,7 @@ const App = () => {
       const data = await GetWeatherApi(query);
       setWeather(data);
       checkTime(data);
-      forecast();
+      await forecast();
       setQuery("");
     }
   };
