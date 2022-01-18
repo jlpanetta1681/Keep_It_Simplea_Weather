@@ -1,13 +1,11 @@
-// import Axios from "axios";
-// import Super_Key from "../config";
-// import Axios from "axios";
-import Key from "../config"
 
-// const OpenWeatherPass = Super_Key;
-// const Url = "https://api.openweathermap.org/data/2.5/forecast";
+import Key from "../config"
 
 
 import axios from "axios";
+
+const Url = "https://community-open-weather-map.p.rapidapi.com/weather"
+
 
 
 const GetForecast = () => {
@@ -22,10 +20,10 @@ const options = {
     id: '2172797',
     lang: 'null',
     units: 'imperial',
-    mode: 'xml'
+    mode: 'json'
   },
   headers: {
-    'x-rapidapi-host': 'community-open-weather-map.p.rapidapi.com',
+    'x-rapidapi-host': Url,
     'x-rapidapi-key': Key
   }
 };
