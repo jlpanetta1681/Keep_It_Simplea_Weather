@@ -56,7 +56,7 @@ const App = () => {
     setWeather2(forecastData);
   };
   console.log(weather2);
-  const Foredata = weather2.map((item, i) => {
+  const Firstdata = weather2.map((item, i) => {
     return (
       <div className="forecast">
         <div key={i} className="date">
@@ -75,9 +75,9 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <h1>Weather App</h1>
+      <h1>Weather With Friends!</h1>
       <input
-        placeholder="Enter City..."
+        placeholder="Enter City or a state..."
         type="text"
         className="search"
         value={query}
@@ -105,7 +105,7 @@ const App = () => {
           </div>
         </div>
       )}
-      {weather2.length > 0 ? <div className="container">{Foredata}</div> : null}
+      {weather2.length > 0 ? <div className="container">{Firstdata}</div> : null}
     </div>
   );
 };
