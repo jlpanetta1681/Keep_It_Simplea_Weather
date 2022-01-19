@@ -11,16 +11,15 @@ const Url = "https://community-open-weather-map.p.rapidapi.com/weather"
 const GetForecast = () => {
 const options = {
   method: 'GET',
-  url: 'https://community-open-weather-map.p.rapidapi.com/weather',
+  // url: 'https://community-open-weather-map.p.rapidapi.com/weather',
   params: {
-    q: 'London,uk',
+    q: '',
     lat: '0',
     lon: '0',
-    callback: 'test',
     id: '2172797',
     lang: 'null',
     units: 'imperial',
-    mode: 'json'
+    mode: 'XML'
   },
   headers: {
     'x-rapidapi-host': Url,

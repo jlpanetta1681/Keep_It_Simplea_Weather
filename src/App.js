@@ -6,6 +6,7 @@ import "./App.css";
 
 
 
+
 const App = () => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
@@ -38,7 +39,7 @@ const App = () => {
   }
 
   const forecast = async (e) => {
-    const data = await GetForecast(query);
+    const data = GetForecast(query);
     const forecastData = [];
 
     for (let i = 0; i < data.list.length; i += 8) {
@@ -75,6 +76,7 @@ const App = () => {
 
   return (
     <div className="main-container">
+  
       <h1>Weather With Friends!</h1>
       <input
         placeholder="Enter City or a state..."
